@@ -1,4 +1,3 @@
-
 FROM gitpod/workspace-full
 
 USER root
@@ -18,4 +17,4 @@ RUN git clone https://github.com/flutter/flutter && \
     /home/gitpod/flutter/bin/flutter config --enable-web
 
 ENV PUB_CACHE=/home/gitpod/.pub_cache
-ENV PATH ${PATH}:${FLUTTER_HOME}/bin:${FLUTTER_HOME}/Android/flutter/bin/
+ENV PATH ${PATH}:${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin
